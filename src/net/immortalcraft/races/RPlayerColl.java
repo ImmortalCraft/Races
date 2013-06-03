@@ -19,9 +19,9 @@ import com.massivecraft.mcore.store.SenderColl;
 		// -------------------------------------------- //
 
 		@Override
-		public boolean isDefault(RPlayer entity)
+		public boolean isDefault(RPlayer rplayer)
 		{
-			if (entity.isRace()) return false;
+			if (RPlayer.getRace() != null) return false;
 			return true;
 		}
 }

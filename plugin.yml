@@ -31,3 +31,13 @@ permissions:
       races.info: true
       races.version: true
       default: false
+   
+   # -------------------------------------------- #
+   # THE KITS
+   # -------------------------------------------- #
+   
+   races.kit.default:
+   	default: false
+   		children:
+   			races.*: true
+   			
