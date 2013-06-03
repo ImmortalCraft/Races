@@ -6,5 +6,23 @@ authors: [gamerfreak22222, Havoc1028]
 description: Â§bRaces is a plugin that allows players to choose between a select group of races to bring more fun and abilities to Minecraft. This plugin is mainly made by §6gamerfreak22222§b. It is under early development.
 depend: [mcore]
 permissions:
-    //Nodes
+   # -------------------------------------------- #
+   # THE NODES
+   # -------------------------------------------- #
+    
+    races.be.demon {description: lets player become a demon, default: false}
+    races.be.elf   {description: lets player become an elf, default: false}
+    races.be.human {description: lets player become a human, default: false}
+    races.be.orc   {description: lets player become an orc, default: false}
+    races.info     {description: shows info about a race, default: false}
     races.version  {description: view the plugin version and info, default: false}
+   
+   # -------------------------------------------- #
+   # THE STAR NOTATIONS
+   # -------------------------------------------- #
+   
+   races.*:
+   default: false
+    children:
+      races.version: true
+      default: false

@@ -1,5 +1,5 @@
 package net.immortalcraft.races.race;
 
-public class Demon {
+public class Human {
 
 }
