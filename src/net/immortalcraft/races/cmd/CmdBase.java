@@ -1,10 +1,10 @@
 package net.immortalcraft.races.cmd;
 
-	import com.massivecraft.mcore.cmd.HelpCommand;
-	import com.massivecraft.mcore.cmd.VersionCommand;
-	import net.immortalcraft.races.ConfServer;
-	import net.immortalcraft.races.Races;
-	import net.immortalcraft.races.RPerm;
+import com.massivecraft.mcore.cmd.HelpCommand;
+import com.massivecraft.mcore.cmd.VersionCommand;
+import net.immortalcraft.races.ConfServer;
+import net.immortalcraft.races.Races;
+import net.immortalcraft.races.RPerm;
 
 	public class CmdBase extends RCommand
 	{

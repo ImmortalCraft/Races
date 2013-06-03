@@ -10,7 +10,8 @@ public class CmdRacesInfo extends RCommand
 	}
 
 	@Override
-	public void perform() {
+	public void perform() 
+	{
 		
 		
 	}

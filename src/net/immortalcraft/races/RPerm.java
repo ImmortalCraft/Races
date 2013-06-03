@@ -6,14 +6,19 @@ import com.massivecraft.mcore.util.PermUtil;
 
 public enum RPerm 
 {
-   VERSION(".version"),
+	BE_DEMON(".be.demon"),
+    BE_ELF(".be.elf"),
+    BE_HUMAN(".be.human"),
+    BE_ORC(".be.orc"),
+    INFO(".info"),
+    VERSION(".version"),
 	;
 
 	public final String node;
 
 	RPerm(final String permissionNode)
 	{
-		this.node = "race."+permissionNode;
+		this.node = "races."+permissionNode;
     }
 
 	public boolean has(CommandSender sender, boolean informSenderIfNot)

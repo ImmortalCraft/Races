@@ -59,13 +59,13 @@ public class Races extends MPlugin
 		);
 
 		// Load Conf from disk
-		//Lang.i.load();
+		Lang.i.load();
 		ConfServer.i.load();
 		ConfColls.i.init();
 		RPlayerColls.i.init();
 
 		// Initialize collections
-		// RPlayerColl.i.init();
+		RPlayerColls.i.init();
 
 		// Add Base Commands
 		this.cmdBase = new CmdBase();
@@ -75,7 +75,7 @@ public class Races extends MPlugin
 		Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new TheTask(), 0, ConfServer.taskInterval);
 
 		// Register events
-		//new TheListener(this);
+		new TheListener(this);
 
 		postEnable();
 	}

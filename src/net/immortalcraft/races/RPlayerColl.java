@@ -21,7 +21,7 @@ import com.massivecraft.mcore.store.SenderColl;
 		@Override
 		public boolean isDefault(RPlayer entity)
 		{
-			//if (entity.isRace()) return false;
+			if (entity.isRace()) return false;
 			return true;
 		}
 }
