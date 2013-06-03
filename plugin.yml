@@ -8,9 +8,3 @@ depend: [mcore]
 permissions:
     //Nodes
     races.version  {description: view the plugin version and info, default: false}
-	//Star Notation
-	races.*:
-	  default: false
-	  children:
-	    races.version
-	    //Kits
