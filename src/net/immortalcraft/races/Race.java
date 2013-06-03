@@ -19,7 +19,6 @@ public abstract class Race extends TheListener {
 	public List<String> playerList =
 			Arrays.asList(new String[] { "gamerfreak22222", "defaultPlayers", "yourPlayersHere"});
 	public int spellSlots = 1;
-	}
 
 	public abstract void load();	
 	public abstract int getDamageForBiome(Biome biome);
