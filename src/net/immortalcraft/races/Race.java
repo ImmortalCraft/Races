@@ -3,7 +3,6 @@ package net.immortalcraft.races;
 import java.util.Arrays;
 import java.util.List;
 
-import net.immortalcraft.race.listener.TheListener;
 
 import org.bukkit.block.Biome;
 import org.bukkit.event.entity.EntityDamageEvent;
