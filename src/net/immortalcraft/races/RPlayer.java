@@ -24,4 +24,9 @@ import com.massivecraft.mcore.store.SenderEntity;
 		{
 			//TODO load races and stuffs
 		}
+		
+		public void tick(long ticks)
+		{
+			//TODO add certain ticks
+		}
 	}
