@@ -22,7 +22,8 @@ import com.massivecraft.mcore.store.SenderEntity;
 		@Override
 		public RPlayer load(RPlayer that)
 		{
-			//TODO load races and stuffs
+			//TODO load races and stuff
+			return null;
 		}
 		
 		public void tick(long ticks)
