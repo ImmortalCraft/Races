@@ -24,5 +24,10 @@ permissions:
    races.*:
    default: false
     children:
+      races.be.demon: true
+      races.be.elf: true
+      races.be.human: true
+      races.be.orc: true
+      races.info: true
       races.version: true
       default: false
