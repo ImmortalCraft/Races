@@ -28,7 +28,7 @@ public class Conf extends Entity<Conf>
 		// -------------------------------------------- //
 
 		public Set<DamageCause> blockDamageFrom = MUtil.set(
-			DamageCause.DROWNING,
+			DamageCause.FIRE,
 			DamageCause.FALL,
 			DamageCause.STARVATION
 		);
@@ -42,14 +42,11 @@ public class Conf extends Entity<Conf>
 		// UPDATE
 		// -------------------------------------------- //
 
-		public Map<String,Boolean> updatePermsVampire = MUtil.map(
-			"vampire.is.vampire", true,
-			"vampire.is.human", false
-		);
-
-		public Map<String,Boolean> updatePermsHuman = MUtil.map(
-			"vampire.is.vampire", false,
-			"vampire.is.human", true
+		public Map<String,Boolean> updatePermsRace = MUtil.map(
+			"race.is.demon", true,
+			"race.is.elf", true,
+			"race.is.human", true,
+			"race.is.orc", true
 		);
 
 		public int updateRespawnFood = 20;
