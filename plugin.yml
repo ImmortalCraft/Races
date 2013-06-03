@@ -5,3 +5,16 @@ website: http://immortalcraftpvp.net/forums
 authors: [gamerfreak22222, Havoc1028]
 description: Â§bRaces is a plugin that allows players to choose between a select group of races to bring more fun and abilities to Minecraft. This plugin is mainly made by §6gamerfreak22222§b. It is under early development.
 depend: [mcore]
+permissions:
+	
+	//Nodes
+	races.version  {description: view the plugin version and info, default: false}
+	
+	//Star Notation
+	
+	races.*:
+		default: false
+		children:
+			races.version
+	
+	//Kits
