@@ -22,10 +22,20 @@ public class Conf extends Entity<Conf>
 	{
 		return ConfColls.i.get2(worldNameExtractable);
 	}
+	// -------------------------------------------- //
+	// FX
+	// -------------------------------------------- //
+	
+	public double fxSmokePerTick = 0.40D;
+	public double fxEnderPerTick = 0.10D;
+	public int fxEnderRandomMaxLen = 1;
+	public double fxSmokeBurstCount = 30D;
+	public double fxFlameBurstCount = 5D;
+	public double fxEnderBurstCount = 3D;
 
 	// -------------------------------------------- //
-		// MISC
-		// -------------------------------------------- //
+    // MISC
+	// -------------------------------------------- //
 
 		public Set<DamageCause> blockDamageFrom = MUtil.set(
 			DamageCause.FIRE,
