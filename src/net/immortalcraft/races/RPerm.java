@@ -6,6 +6,7 @@ import com.massivecraft.mcore.util.PermUtil;
 
 public enum RPerm 
 {
+	BE(".be"),
 	BE_DEMON(".be.demon"),
     BE_ELF(".be.elf"),
     BE_HUMAN(".be.human"),

@@ -1,6 +1,6 @@
 package net.immortalcraft.races.cmd;
 
-public class CmdRacesBeElf extends CmdRacesBeAbstract 
+public class CmdRacesBeElf extends CmdRacesBe 
 {
 	public CmdRacesBeElf()
 	{

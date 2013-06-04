@@ -8,10 +8,7 @@ import net.immortalcraft.races.RPerm;
 
 	public class CmdBase extends RCommand
 	{
-		public CmdRacesBeDemon cmdRacesBeDemon = new CmdRacesBeDemon();
-		public CmdRacesBeElf cmdRacesBeElf = new CmdRacesBeElf();
-		public CmdRacesBeHuman cmdRacesBeHuman = new CmdRacesBeHuman();
-		public CmdRacesBeOrc cmdRacesBeOrc = new CmdRacesBeOrc();
+		public CmdRacesBe cmdRacesBe = new CmdRacesBe();
 		public CmdRacesInfo cmdRacesInfo = new CmdRacesInfo();
 	    public VersionCommand cmdVersion = new VersionCommand(Races.get(), RPerm.VERSION.node, "v", "version");
 
@@ -20,10 +17,7 @@ import net.immortalcraft.races.RPerm;
 			this.addAliases(ConfServer.baseCommandAliases);
 
 			this.addSubCommand(HelpCommand.get());
-			this.addSubCommand(cmdRacesBeDemon);
-			this.addSubCommand(cmdRacesBeElf);
-			this.addSubCommand(cmdRacesBeHuman);
-			this.addSubCommand(cmdRacesBeOrc);
+			this.addSubCommand(cmdRacesBe);
 			this.addSubCommand(cmdRacesInfo);
 			this.addSubCommand(cmdVersion);
 
