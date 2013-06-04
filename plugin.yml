@@ -10,6 +10,7 @@ permissions:
    # THE NODES
    # -------------------------------------------- #
     
+    races.be       {description: lets player become a race default: false}
     races.be.demon {description: lets player become a demon, default: false}
     races.be.elf   {description: lets player become an elf, default: false}
     races.be.human {description: lets player become a human, default: false}
@@ -24,6 +25,7 @@ permissions:
    races.*:
    default: false
     children:
+      races.be: true
       races.be.demon: true
       races.be.elf: true
       races.be.human: true

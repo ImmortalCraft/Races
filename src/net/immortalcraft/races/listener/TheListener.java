@@ -50,12 +50,16 @@ public class TheListener implements Listener
 		Conf conf = Conf.get(entity);
 
 		if ( ! (entity instanceof Player)) return;
-		if ( ! conf.blockDamageFrom.contains(event.getCause())) return;
+		if ( ! conf.blockDamageFromOrc.contains(event.getCause())) return;
 
 		RPlayer rplayer = (RPlayer)entity;
 
 		if (rplayer.isOrc()) event.setCancelled(true);
-		if (rplayer.isElf()) event.setCancelled(true);
+
+		if ( ! (entity instanceof Player)) return;
+		if ( ! conf.blockDamageFromDemon.contains(event.getCause())) return;
+
+		if (rplayer.isDemon()) event.setCancelled(true);
 	}
 
 	@EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)

@@ -37,11 +37,16 @@ public class Conf extends Entity<Conf>
     // MISC
 	// -------------------------------------------- //
 
-		public Set<DamageCause> blockDamageFrom = MUtil.set(
-			DamageCause.FIRE,
+		public Set<DamageCause> blockDamageFromOrc = MUtil.set(
 			DamageCause.FALL,
 			DamageCause.STARVATION
 		);
+		
+		public Set<DamageCause> blockDamageFromDemon = MUtil.set(
+				DamageCause.FIRE,
+				DamageCause.LAVA,
+				DamageCause.FALL
+			);
 
 		public Set<RegainReason> blockHealthFrom = MUtil.set(
 			RegainReason.SATIATED,
