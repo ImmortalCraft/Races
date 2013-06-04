@@ -44,28 +44,28 @@ import com.massivecraft.mcore.store.SenderEntity;
 		public boolean isDemon()
 		{
 			RPlayer.getRace();
-			if ( Race.DEMON != null);
+			if ( Race.Demon != null);
 				return true;
 		}
 		
 		public boolean isElf()
 		{
 			RPlayer.getRace();
-			if ( Race.ELF != null);
+			if ( Race.Elf != null);
 				return true;
 		}
 		
 		public boolean isHuman()
 		{
 			RPlayer.getRace();
-			if ( Race.HUMAN != null);
+			if ( Race.Human != null);
 				return true;
 		}
 		
 		public boolean isOrc()
 		{
 			RPlayer.getRace();
-			if ( Race.ORC != null);
+			if ( Race.Orc != null);
 				return true;
 		}
 
@@ -79,13 +79,13 @@ import com.massivecraft.mcore.store.SenderEntity;
 		{
 		
 		if
-		 	( RPlayer.isRace(Race.DEMON));
+		 	( RPlayer.isRace(Race.Demon));
 		if
-			( RPlayer.isRace(Race.ELF));
+			( RPlayer.isRace(Race.Elf));
 		if 
-			( RPlayer.isRace(Race.ORC));
+			( RPlayer.isRace(Race.Orc));
 		if
-			( RPlayer.isRace(Race.HUMAN));
+			( RPlayer.isRace(Race.Human));
 				return null;
 		}
 	}
