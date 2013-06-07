@@ -4,7 +4,7 @@ import org.bukkit.command.CommandSender;
 
 import com.massivecraft.mcore.util.PermUtil;
 
-public enum RPerm 
+public enum Perm 
 {
 	BE(".be"),
 	BE_DEMON(".be.demon"),
@@ -17,7 +17,7 @@ public enum RPerm
 
 	public final String node;
 
-	RPerm(final String permissionNode)
+	Perm(final String permissionNode)
 	{
 		this.node = "races."+permissionNode;
     }

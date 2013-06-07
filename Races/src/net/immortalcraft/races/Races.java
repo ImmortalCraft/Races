@@ -1,13 +1,13 @@
 package net.immortalcraft.races;
 
+import net.immortalcraft.races.cmd.CmdBase;
+import net.immortalcraft.races.listener.TheListener;
+
 import org.bukkit.Bukkit;
 
 import com.massivecraft.mcore.Aspect;
 import com.massivecraft.mcore.AspectColl;
 import com.massivecraft.mcore.MPlugin;
-
-import net.immortalcraft.races.cmd.CmdBase;
-import net.immortalcraft.races.listener.TheListener;
 
 public class Races extends MPlugin 
 {
@@ -29,6 +29,7 @@ public class Races extends MPlugin
 	// Aspects
 	public Aspect playerAspect;
 	public Aspect configAspect;
+	
 
 	// -------------------------------------------- //
 	// OVERRIDE
@@ -38,7 +39,7 @@ public class Races extends MPlugin
 	public void onEnable()
 	{
 		if ( ! preEnable()) return;
-
+		
 		// Init aspects
 		this.playerAspect = AspectColl.get().get(Const.playerAspectId, true);
 		this.playerAspect.register();
@@ -65,7 +66,7 @@ public class Races extends MPlugin
 		RPlayerColls.i.init();
 
 		// Initialize collections
-		RPlayerColls.i.init();
+		// RPlayerColls.i.init();
 
 		// Add Base Commands
 		this.cmdBase = new CmdBase();

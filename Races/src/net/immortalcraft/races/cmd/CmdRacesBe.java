@@ -1,6 +1,6 @@
 package net.immortalcraft.races.cmd;
 
-import net.immortalcraft.races.RPerm;
+import net.immortalcraft.races.Perm;
 
 import com.massivecraft.mcore.cmd.HelpCommand;
 import com.massivecraft.mcore.cmd.req.ReqHasPerm;
@@ -21,7 +21,7 @@ public class CmdRacesBe extends RCommand
 		this.addSubCommand(this.cmdRacesBeHuman);
 		this.addSubCommand(this.cmdRacesBeOrc);
 
-		this.addRequirements(ReqHasPerm.get(RPerm.BE.node));
+		this.addRequirements(ReqHasPerm.get(Perm.BE.node));
 	}
 
 	@Override
