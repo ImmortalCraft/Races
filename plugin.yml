@@ -2,28 +2,24 @@ main: net.immortalcraft.races.Races
 name: Races
 version: 0.0.1_dev
 website: http://immortalcraftpvp.net/forums
-authors: [gamerfreak22222, Havoc1028]
-description: Â§bRaces is a plugin that allows players to choose between a select group of races to bring more fun and abilities to Minecraft. This plugin is mainly made by §6gamerfreak22222§b. It is under early development.
+authors: [gamerfreak22222]
+description: §bRaces is a plugin that allows players to choose between a select group of races to bring more fun and abilities to Minecraft. This plugin is mainly made by §6gamerfreak22222§b. It is under early development.
 depend: [mcore]
 permissions:
-   # -------------------------------------------- #
-   # THE NODES
-   # -------------------------------------------- #
-    
-    races.be       {description: lets player become a race default: false}
-    races.be.demon {description: lets player become a demon, default: false}
-    races.be.elf   {description: lets player become an elf, default: false}
-    races.be.human {description: lets player become a human, default: false}
-    races.be.orc   {description: lets player become an orc, default: false}
-    races.info     {description: shows info about a race, default: false}
-    races.version  {description: view the plugin version and info, default: false}
-   
-   # -------------------------------------------- #
-   # THE STAR NOTATIONS
-   # -------------------------------------------- #
-   
-   races.*:
-   default: false
+# -------------------------------------------- #
+# THE REAL NODES
+# -------------------------------------------- #
+  races.be:            {description: become a race, default: false}
+  races.be.demon:      {description: become a demon, default: false}
+  races.be.elf:        {description: become an elf, default: false}
+  races.be.human:      {description: become a human, default: false}
+  races.be.orc:        {description: become an orc, default: false}
+  races.info:          {description: show a race's information, default: false}
+  races.version:       {description: show plugin version, default: false}
+# -------------------------------------------- #
+# STAR NOTATION
+# -------------------------------------------- #
+  races.*:
     children:
       races.be: true
       races.be.demon: true
@@ -32,14 +28,24 @@ permissions:
       races.be.orc: true
       races.info: true
       races.version: true
-      default: false
-   
-   # -------------------------------------------- #
-   # THE KITS
-   # -------------------------------------------- #
-   
-   races.kit.default:
-   	default: false
-   		children:
-   			races.*: true
-   			
+# -------------------------------------------- #
+# KITS
+# -------------------------------------------- #
+  races.kit.op:
+    default: op
+    children:
+      races.*: true
+  races.kit.rank0:
+    default: false
+    children:
+      races.be: true
+      races.be.demon: true
+      races.be.elf: true
+      races.be.human: true
+      races.be.orc: true
+      races.info: true
+      races.version: true
+  races.kit.default:
+    default: true
+    children:
+      races.kit.rank0: true

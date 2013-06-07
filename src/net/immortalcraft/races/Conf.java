@@ -1,6 +1,5 @@
 package net.immortalcraft.races;
 
-import java.util.Map;
 import java.util.Set;
 
 import org.bukkit.ChatColor;
@@ -56,13 +55,6 @@ public class Conf extends Entity<Conf>
 		// -------------------------------------------- //
 		// UPDATE
 		// -------------------------------------------- //
-
-		public Map<String,Boolean> updatePermsRace = MUtil.map(
-			"race.is.demon", true,
-			"race.is.elf", true,
-			"race.is.human", true,
-			"race.is.orc", true
-		);
 
 		public int updateRespawnFood = 20;
 		public int updateRespawnHealth = 20;
