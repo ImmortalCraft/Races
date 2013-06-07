@@ -10,21 +10,21 @@ permissions:
    # THE NODES
    # -------------------------------------------- #
     
-    races.be       {description: lets player become a race default: false}
+    races.be {description: lets player become a race, default: false}
     races.be.demon {description: lets player become a demon, default: false}
-    races.be.elf   {description: lets player become an elf, default: false}
+    races.be.elf {description: lets player become an elf, default: false}
     races.be.human {description: lets player become a human, default: false}
-    races.be.orc   {description: lets player become an orc, default: false}
-    races.info     {description: shows info about a race, default: false}
-    races.version  {description: view the plugin version and info, default: false}
+    races.be.orc {description: lets player become an orc, default: false}
+    races.info {description: shows info about a race, default: false}
+    races.version {description: view the plugin version and info, default: false}
    
    # -------------------------------------------- #
    # THE STAR NOTATIONS
    # -------------------------------------------- #
    
-   races.*:
-   default: false
-    children:
+    races.*:
+     default: false
+     children:
       races.be: true
       races.be.demon: true
       races.be.elf: true
@@ -38,8 +38,8 @@ permissions:
    # THE KITS
    # -------------------------------------------- #
    
-   races.kit.default:
-   	default: false
-   		children:
-   			races.*: true
-   			
+    races.kit.default:
+     default: false
+     children:
+      races.*: true
+      default: false

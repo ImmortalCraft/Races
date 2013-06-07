@@ -10,7 +10,7 @@ import net.immortalcraft.races.RPerm;
 	{
 		public CmdRacesBe cmdRacesBe = new CmdRacesBe();
 		public CmdRacesInfo cmdRacesInfo = new CmdRacesInfo();
-	    	public VersionCommand cmdVersion = new VersionCommand(Races.get(), RPerm.VERSION.node, "v", "version");
+	    public VersionCommand cmdVersion = new VersionCommand(Races.get(), RPerm.VERSION.node, "v", "version");
 
 		public CmdBase()
 		{
