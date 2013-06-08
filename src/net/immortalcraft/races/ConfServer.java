@@ -20,6 +20,7 @@ public class ConfServer extends SimpleConfig
 	// -------------------------------------------- //
 
 	public static transient ConfServer i = new ConfServer();
+	public static ConfServer get() { return i; }
 	public ConfServer() { super(Races.r); }
 }
 

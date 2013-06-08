@@ -40,6 +40,9 @@ public class Races extends MPlugin
 	{
 		if ( ! preEnable()) return;
 		
+		// Load Server Config
+		ConfServer.get().load();
+		
 		// Init aspects
 		this.playerAspect = AspectColl.get().get(Const.playerAspectId, true);
 		this.playerAspect.register();
