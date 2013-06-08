@@ -115,6 +115,10 @@ import com.massivecraft.mcore.util.MUtil;
 		protected boolean human;
 		protected boolean orc;
 		
+		//---------------------------------------------//
+		// IS RACE
+		//--------------------------------------------//
+		
 		public boolean isDemon()
 		{
 			RPlayer.getRace();
@@ -149,6 +153,10 @@ import com.massivecraft.mcore.util.MUtil;
 			return false;
 		}
 		
+		//---------------------------------------------//
+		// GET RACE
+		//--------------------------------------------//
+		
 		public static Race getRace()
 		{
 		
@@ -162,6 +170,9 @@ import com.massivecraft.mcore.util.MUtil;
 			( RPlayer.isRace(Race.Human));
 				return null;
 		}
+		//---------------------------------------------//
+		// SET RACE
+		//--------------------------------------------//
 
 		public void setDemon(Boolean val)
 		{

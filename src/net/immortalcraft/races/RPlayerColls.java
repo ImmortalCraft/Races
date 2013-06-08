@@ -6,6 +6,7 @@ import com.massivecraft.mcore.store.Colls;
 public class RPlayerColls extends Colls<RPlayerColl, RPlayer>
 {
 	public static RPlayerColls i = new RPlayerColls();
+	public static RPlayerColls get() { return i; }
 
 	@Override
 	public RPlayerColl createColl(String collName)
