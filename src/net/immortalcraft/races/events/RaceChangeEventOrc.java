@@ -19,7 +19,7 @@ import net.immortalcraft.races.RPlayer;
 		// -------------------------------------------- //
 
 		protected final boolean orc;
-		public boolean isHuman() { return this.orc; }
+		public boolean isOrc() { return this.orc; }
 
 		protected final RPlayer rplayer;
 		public RPlayer getrplayer() { return this.rplayer; }
